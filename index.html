@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Creative Space</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -24,12 +24,16 @@
         <p>This is where our journey begins...</p>
     </section>
 
+    <section id="upload-section">
+        <h2>Upload Your Photos</h2>
+        <input type="file" id="image-upload" accept="image/*" multiple>
+        <button id="upload-button">Upload</button>
+    </section>
+
     <section id="gallery">
         <h2>Gallery</h2>
-        <div class="photo-grid">
-            <img src="images/photo1.jpg" alt="Our Memory 1">
-            <img src="images/photo2.jpg" alt="Our Memory 2">
-            <!-- Add more photos here -->
+        <div id="photo-grid" class="photo-grid">
+            <!-- Uploaded images will appear here -->
         </div>
     </section>
 
@@ -47,5 +51,7 @@
     <footer>
         <p>Created with love by [Your Name] & [Your Love's Name]</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
