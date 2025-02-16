@@ -36,6 +36,23 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+#upload-section {
+    text-align: center;
+}
+
+#image-upload {
+    display: none; /* Hide the default file input */
+}
+
+#upload-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -45,6 +62,11 @@ section {
 .photo-grid img {
     width: 100%;
     border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.05);
 }
 
 footer {
@@ -52,7 +74,4 @@ footer {
     padding: 10px;
     background-color: #333;
     color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
